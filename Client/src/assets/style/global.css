@@ -1,0 +1,203 @@
+/* Hader Css */
+.header {
+  background-color: #4a90e2;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* side bar css */
+.sidebar {
+  background-color: #333;
+  color: white;
+  width: 160px;
+  padding: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 10px 10px;
+  margin-left: 10px;
+}
+
+/* .sidebar li {
+  padding: 10px 0;
+} */
+
+/* Sidebar list items */
+.sidebar li {
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar li:hover {
+  background-color: #555;
+  color: #ffffff;
+}
+
+.sidebar li a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar li a:hover {
+  color: #fff;
+}
+
+.sidebar-title {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #444;
+  margin-bottom: 10px;
+}
+
+/* outlet css */
+/* UserLayout.css */
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Main layout to wrap sidebar and outlet content */
+.main-layout {
+  display: flex;
+  margin-top: 60px;
+  height: calc(100vh - 60px);
+}
+
+/* Sidebar */
+.sidebar {
+  /* width: 200px; */
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  /* height: 100%; */
+  overflow-y: auto;
+}
+
+/* Main content */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f5f5f5;
+}
+
+/* add task css */
+/* Container for the form */
+.add-task-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title */
+.add-task-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Form fields */
+.add-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Label for each input field */
+.add-task-form label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Input fields */
+.add-task-form input,
+.add-task-form textarea,
+.add-task-form select {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.add-task-form textarea {
+  resize: vertical;
+}
+
+.add-task-form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Submit button */
+.add-task-form button {
+  padding: 10px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-task-form button:hover {
+  background-color: #357ab7;
+}
+
+.add-task-form button:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-task-container {
+    width: 90%;
+  }
+
+  .add-task-title {
+    font-size: 1.5rem;
+  }
+}
+
+.main-box-button {
+  background-color: skyblue;
+  width: 90px;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  margin-left: 1100px;
+  border-radius: 5px;
+}
+
+/* dailog css */
+.dialog {
+  width: 550px;
+}
